@@ -4,14 +4,14 @@
  
  /* Aplicação de Fonte Web Google */
  
- .monospace {
-   font-family: "Lucida Console", Courier, monospace;
+ * {
+   font-family: 'Montserrat', sans-serif;
  }
  
  /* Estilos da página index.html */
  
  h1, h2 {
-   margin: 20px;
+   margin: 30px;
  }
  
  .center {
@@ -30,16 +30,17 @@
  }
  
  .menu {
-   background-color: #1e86ee;
+   background-color: #24292E;
    height: 50px;
  }
  
  .menu li {
    display: inline-block;
-   font-size: 2px;
+   padding: 15px;
+   font-size: 22px;
  }
  
- /*.menu li a {
+ .menu li a {
    text-decoration: none;
    color: #FFF;
    font-weight: bold;
@@ -48,8 +49,11 @@
  .menu li a:hover {
    color: #AAA;
    transition: 1.2s;
- }*/
+ }
  
+ .about {
+   padding: 30px;
+ }
  
  .image {
    border-radius: 50%;
@@ -61,8 +65,14 @@
  .video {
    margin-bottom: 30px;
    opacity: 1;
+   transition: 400ms;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
  }
-  
+ 
+ .video:hover {
+   opacity: 0.9;
+ }
+ 
  .tm-social {
    width: 50px;
    height: 100%;
@@ -78,26 +88,21 @@
  .mb-50 {
    margin-bottom: 50px;
  }
- .menu {
-   background-color: #1e86ee;
-   height: 50px;
- }
  
- .menu li {
-   display: inline-block;
-   font-size: 2px;
- }
  .send {
    width: 40%;
    padding: 15px 0;
-   background-color: #f1a4f8;
-   color: rgb(255, 214, 253);
+   background-color: #303438;
+   color: #fff;
+   font-weight: bold;
    font-size: 18px;
    border: none;
    border-radius: 10px;
+   transition: 1s all;
+   cursor: pointer;
  }
  
  .send:hover {
-   background-color: #f3ccee;
+   background-color: #24292E;
    transform: scale(1.2);
  }
